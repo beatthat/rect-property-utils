@@ -1,0 +1,41 @@
+{
+    "name": "ui-rect-utils",
+    "scope": "ape",
+    "version": "0.0.1",
+    "description": "For complex/transitioning layouts, compontents that enable you to compose layout states as sets of (invisible) RectTransforms.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/beatthat/ui-rect-utils.git"
+    },
+    "files": [
+        "index.js",
+        "scripts",
+        "src"
+    ],
+    "author": "larrykirschner@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/beatthat/ui-rect-utils/issues"
+    },
+    "homepage": "https://github.com/beatthat/ui-rect-utils",
+    "scripts": {
+        "postinstall": "node scripts/postinstall.js",
+        "install:test": "rm -f *.tgz && npm pack && cd test && npm run clean && npm install",
+        "clean": "rm -f *.tgz && cd test && npm run clean",
+        "cp:test2src" : "cd test && node scripts/cp-test2src.js",
+        "overwrite:test2src" : "cd test && node scripts/overwrite-test2src.js",
+        "pub:tag": "git add -A && git commit -m ${npm_package_version} && git tag -a ${npm_package_version} -m ${npm_package_version} && git push origin master && git push origin ${npm_package_version}"
+    },
+    "dependencies": {
+        "path": "^0.12.7",
+        "unity-npm-utils": "github:beatthat/unity-npm-utils#semver:^0.0.9",
+        "color-ext": "github:beatthat/color-ext#semver:^0.0.1",
+        "gameobject-utils": "github:beatthat/gameobject-utils#semver:^0.0.2",
+        "property-displayers": "github:beatthat/property-displayers#semver:^0.0.1",
+        "property-interfaces": "github:beatthat/property-interfaces#semver:^0.0.4",
+        "properties": "github:beatthat/properties#semver:^0.0.12",
+        "rect-utils": "github:beatthat/rect-utils#semver:^0.0.3",
+        "ui-apply-layouts": "github:beatthat/ui-apply-layouts#semver:^0.0.2"
+    }
+}
