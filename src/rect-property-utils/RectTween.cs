@@ -29,6 +29,7 @@ namespace BeatThat
 		// Analysis restore ConvertToAutoProperty
 
 		public object GetDrivenObject() { return this.driven; }
+		public bool ClearDriven() { m_drivenRect = null; return true; } 
 		#endregion
 
 		override public void UpdateDisplay()

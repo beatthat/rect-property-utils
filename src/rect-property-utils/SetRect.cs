@@ -46,6 +46,7 @@ namespace BeatThat
 		}
 
 		public object GetDrivenObject() { return this.driven; }
+		public bool ClearDriven() { m_drivenRect = null; return true; }
 		#endregion
 
 
