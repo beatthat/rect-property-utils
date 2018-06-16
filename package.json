@@ -1,7 +1,7 @@
 {
   "name": "rect-property-utils",
   "scope": "beatthat",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "components for manipulating Rect and RectTransform via property interfaces.",
   "main": "index.js",
   "repository": {
