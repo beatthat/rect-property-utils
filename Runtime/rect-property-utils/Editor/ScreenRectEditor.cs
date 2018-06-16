@@ -1,8 +1,9 @@
-﻿using UnityEditor;
+using BeatThat.Properties;
+using BeatThat.Rects;
+using UnityEditor;
 using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	[CustomEditor(typeof(ScreenRect), true)]
 	[CanEditMultipleObjects]
 	public class ScreenRectEditor : UnityEditor.Editor

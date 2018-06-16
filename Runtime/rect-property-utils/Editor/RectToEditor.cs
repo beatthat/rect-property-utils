@@ -1,8 +1,9 @@
-﻿using UnityEditor;
+using BeatThat.Properties;
+using BeatThat.Rects;
+using UnityEditor;
 using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	[CustomEditor(typeof(RectTo), true)]
 	[CanEditMultipleObjects]
 	public class RectToEditor : RectTweenEditor

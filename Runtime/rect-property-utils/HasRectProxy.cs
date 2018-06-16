@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using BeatThat.Properties;
+using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Useful when a rect is passed in to a component as a param at runtime a
 	/// and multiple child components of the main component need to use the HasRect.

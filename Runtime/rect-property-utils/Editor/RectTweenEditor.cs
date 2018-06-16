@@ -1,8 +1,8 @@
-﻿using UnityEditor;
+using BeatThat.Properties;
+using UnityEditor;
 using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	[CustomEditor(typeof(RectTween), true)]
 	[CanEditMultipleObjects]
 	public class RectTweenEditor : DisplaysFloatEditor

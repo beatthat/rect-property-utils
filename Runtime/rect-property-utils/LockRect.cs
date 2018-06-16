@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+using BeatThat.TransformPathExt;
+using BeatThat.GetComponentsExt;
+using BeatThat.Properties;
+using UnityEngine;
+using BeatThat.ColorExtensions;
+using BeatThat.Rects;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Animates a rect to a target using whatever start rect encountered
 	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
@@ -120,3 +124,6 @@ namespace BeatThat
 		private Rect lockRect { get; set; }
 	}
 }
+
+
+

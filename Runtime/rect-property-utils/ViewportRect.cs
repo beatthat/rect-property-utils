@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+using BeatThat.Controllers;
+using BeatThat.Properties;
+using BeatThat.Rects;
+using UnityEngine;
 
-namespace BeatThat.UI
+namespace BeatThat.PropertiesUI
 {
 	/// <summary>
 	/// Configure a rect transform in terms of viewport coordinates relative to its parent.
@@ -90,3 +93,4 @@ namespace BeatThat.UI
 		private Rect lastScreenRect { get; set; }
 	}
 }
+

@@ -1,6 +1,6 @@
-﻿
-namespace BeatThat
-{
+using BeatThat.Properties;
+
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Common property of RectTo, RectFromTo, SetRect, etc
 	/// </summary>
@@ -9,3 +9,4 @@ namespace BeatThat
 		HasRect toRect { get; }
 	}
 }
+

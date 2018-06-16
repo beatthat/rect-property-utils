@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+using BeatThat.TransformPathExt;
+using BeatThat.Properties;
+using UnityEngine;
+using BeatThat.Rects;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Provides a screen rect for a RectTransform
 	/// </summary>
@@ -33,3 +35,4 @@ namespace BeatThat
 		private RectTransform m_rectTransform;
 	}
 }
+

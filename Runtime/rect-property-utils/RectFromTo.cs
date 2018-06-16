@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+using BeatThat.TransformPathExt;
+using BeatThat.GetComponentsExt;
+using BeatThat.Properties;
+using UnityEngine;
+using BeatThat.ColorExtensions;
+using BeatThat.Rects;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Animates a rect 
 	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
@@ -29,16 +33,19 @@ namespace BeatThat
 
 		private void CaptureStartRect()
 		{
-			if(this.debug) {
+			#if UNITY_EDITOR || DEBUG_UNSTRIP
+			if(m_debug) {
 				Debug.LogWarning("[" + Time.frameCount + "][" + this.Path() + "] " + GetType() + "::CaptureStartRect as " + m_start.rect);
 			}
+			#endif
 
 			m_startRect = m_start.rect;
 			this.hasCapturedStartRect = true;
 		}
 
-		void Start()
+		override protected void Start()
 		{
+			base.Start ();
 			if(m_lockStartRect) {
 				CaptureStartRect();
 			}
@@ -47,8 +54,9 @@ namespace BeatThat
 
 		private bool didStart { get; set; }
 
-		void OnEnable()
+		override protected void OnEnable()
 		{
+			base.OnEnable ();
 			if(!this.didStart) {
 				return;
 			}
@@ -57,8 +65,9 @@ namespace BeatThat
 			}
 		}
 
-		void OnDisable()
+		override protected void OnDisable()
 		{
+			base.OnDisable ();
 			this.hasCapturedStartRect = false;
 		}
 
@@ -160,3 +169,6 @@ namespace BeatThat
 
 	}
 }
+
+
+

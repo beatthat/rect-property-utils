@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+using BeatThat.TransformPathExt;
+using BeatThat.Properties;
+using UnityEngine;
 using UnityEngine.Serialization;
+using BeatThat.GameObjectUtil;
+using BeatThat.Rects;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Keeps a RectTransform's screen rect in sync with some driver screen rect
 	/// </summary>
@@ -110,3 +113,4 @@ namespace BeatThat
 		}
 	}
 }
+

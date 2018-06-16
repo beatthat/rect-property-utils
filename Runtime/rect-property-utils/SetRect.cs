@@ -1,12 +1,18 @@
-﻿using UnityEngine;
+using BeatThat.ColorExtensions;
+using BeatThat.GameObjectUtil;
+using BeatThat.GetComponentsExt;
+using BeatThat.Rects;
+using BeatThat.TransformPathExt;
+using BeatThat.UIApplyLayouts;
+using UnityEngine;
 
-namespace BeatThat
+namespace BeatThat.Properties
 {
-	/// <summary>
-	/// Animates a rect to a target using whatever start rect encountered
-	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
-	/// </summary>
-	public class SetRect : MonoBehaviour, IDrive<HasRect>, HasToRect, IAppliesLayout
+    /// <summary>
+    /// Animates a rect to a target using whatever start rect encountered
+    /// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
+    /// </summary>
+    public class SetRect : MonoBehaviour, IDrive<HasRect>, HasToRect, IAppliesLayout
 	{
 		public HasRect m_drivenRect;
 		public HasRect m_toRect;
@@ -141,3 +147,6 @@ namespace BeatThat
 
 	}
 }
+
+
+

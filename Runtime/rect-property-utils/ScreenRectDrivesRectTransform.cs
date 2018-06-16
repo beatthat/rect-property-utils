@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+using BeatThat.Properties;
+using BeatThat.Rects;
+using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Keeps a RectTransform's screen rect in sync with some driver screen rect
 	/// </summary>

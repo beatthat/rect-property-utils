@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+using BeatThat.TransformPathExt;
+using BeatThat.Properties;
+using UnityEngine;
 using System.Collections.Generic;
+using BeatThat.Rects;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// Animates a rect to a target using whatever start rect encountered
 	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
@@ -11,10 +13,10 @@ namespace BeatThat
 	{
 		public HasRect m_drivenRect;
 
-		public bool m_debug;
-		// Analysis disable ConvertToAutoProperty
-		public bool debug { get { return m_debug; } set { m_debug = value; } }
-		// Analysis restore ConvertToAutoProperty
+//		public bool m_debug;
+//		// Analysis disable ConvertToAutoProperty
+//		public bool debug { get { return m_debug; } set { m_debug = value; } }
+//		// Analysis restore ConvertToAutoProperty
 
 		/// <summary>
 		/// When TRUE, then while playing in editor, will capture path and draw frame positions in gizmos
@@ -80,3 +82,5 @@ namespace BeatThat
 
 	}
 }
+
+

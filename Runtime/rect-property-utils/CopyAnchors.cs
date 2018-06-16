@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+using BeatThat.Properties;
+using BeatThat.Rects;
+using UnityEngine;
 
-namespace BeatThat
-{
+namespace BeatThat.Properties{
 	/// <summary>
 	/// OnEnable will copy RectTransform anchors from source to target.
 	/// </summary>
