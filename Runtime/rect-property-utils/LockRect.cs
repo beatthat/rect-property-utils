@@ -1,16 +1,16 @@
-using BeatThat.TransformPathExt;
-using BeatThat.GetComponentsExt;
-using BeatThat.Properties;
-using UnityEngine;
 using BeatThat.ColorExtensions;
+using BeatThat.GetComponentsExt;
 using BeatThat.Rects;
+using BeatThat.TransformPathExt;
+using UnityEngine;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Animates a rect to a target using whatever start rect encountered
-	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
-	/// </summary>
-	public class LockRect : MonoBehaviour, IDrive<HasRect>, HasToRect, HasPlay
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Animates a rect to a target using whatever start rect encountered
+    /// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
+    /// </summary>
+    public class LockRect : MonoBehaviour, IDrive<HasRect>, HasToRect, HasPlay
 	{
 		public HasRect m_drivenRect;
 		public HasRect m_toRect;

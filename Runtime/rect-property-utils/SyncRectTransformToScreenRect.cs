@@ -1,15 +1,14 @@
-using BeatThat.TransformPathExt;
-using BeatThat.Properties;
-using UnityEngine;
-using UnityEngine.Serialization;
 using BeatThat.GameObjectUtil;
 using BeatThat.Rects;
+using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Keeps a RectTransform's screen rect in sync with some driver screen rect
-	/// </summary>
-	public class SyncRectTransformToScreenRect : MonoBehaviour, Syncable
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Keeps a RectTransform's screen rect in sync with some driver screen rect
+    /// </summary>
+    public class SyncRectTransformToScreenRect : MonoBehaviour, Syncable
 	{
 		// Analysis disable ConvertToConstant.Local
 		#pragma warning disable 0414

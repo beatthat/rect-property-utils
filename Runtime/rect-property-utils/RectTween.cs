@@ -1,15 +1,15 @@
-using BeatThat.TransformPathExt;
-using BeatThat.Properties;
-using UnityEngine;
 using System.Collections.Generic;
 using BeatThat.Rects;
+using BeatThat.TransformPathExt;
+using UnityEngine;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Animates a rect to a target using whatever start rect encountered
-	/// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
-	/// </summary>
-	public abstract class RectTween : DisplaysFloat, IDrive<HasRect>
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Animates a rect to a target using whatever start rect encountered
+    /// Exposes the IHasFloat set_value interface, so this component can be used more easily in transitions (e.g. as an element of a TransitionsElements)
+    /// </summary>
+    public abstract class RectTween : DisplaysFloat, IDrive<HasRect>
 	{
 		public HasRect m_drivenRect;
 

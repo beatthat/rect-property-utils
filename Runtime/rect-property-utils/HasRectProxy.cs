@@ -1,14 +1,14 @@
-using BeatThat.Properties;
 using UnityEngine;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Useful when a rect is passed in to a component as a param at runtime a
-	/// and multiple child components of the main component need to use the HasRect.
-	/// Instead of having to configure each of those children, have a single proxy component.
-	/// In that way, all the children can be configured in advance with the proxy.
-	/// </summary>
-	public class HasRectProxy : HasRect 
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Useful when a rect is passed in to a component as a param at runtime a
+    /// and multiple child components of the main component need to use the HasRect.
+    /// Instead of having to configure each of those children, have a single proxy component.
+    /// In that way, all the children can be configured in advance with the proxy.
+    /// </summary>
+    public class HasRectProxy : HasRect 
 	{
 		public HasRect m_hasRect;
 

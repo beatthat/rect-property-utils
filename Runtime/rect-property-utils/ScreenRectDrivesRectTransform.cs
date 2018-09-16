@@ -1,12 +1,12 @@
-using BeatThat.Properties;
 using BeatThat.Rects;
 using UnityEngine;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Keeps a RectTransform's screen rect in sync with some driver screen rect
-	/// </summary>
-	public class ScreenRectDrivesRectTransform : HasRect
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Keeps a RectTransform's screen rect in sync with some driver screen rect
+    /// </summary>
+    public class ScreenRectDrivesRectTransform : HasRect
 	{
 		public Rect m_rect = new Rect(0, 0, 1, 1);
 		public bool m_updateOnEnable = false;

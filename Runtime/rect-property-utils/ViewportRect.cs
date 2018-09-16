@@ -1,15 +1,13 @@
-using BeatThat.Controllers;
-using BeatThat.Properties;
 using BeatThat.Rects;
 using UnityEngine;
 
-namespace BeatThat.PropertiesUI
+namespace BeatThat.Properties
 {
-	/// <summary>
-	/// Configure a rect transform in terms of viewport coordinates relative to its parent.
-	/// This is similar to using anchors, except replacing right and top anchors with width and height
-	/// </summary>
-	public class ViewportRect : HasRect 
+    /// <summary>
+    /// Configure a rect transform in terms of viewport coordinates relative to its parent.
+    /// This is similar to using anchors, except replacing right and top anchors with width and height
+    /// </summary>
+    public class ViewportRect : HasRect 
 	{
 		#region implemented abstract members of HasRect
 		public override Rect rect 

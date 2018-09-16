@@ -1,13 +1,13 @@
-using BeatThat.TransformPathExt;
-using BeatThat.Properties;
-using UnityEngine;
 using BeatThat.Rects;
+using BeatThat.TransformPathExt;
+using UnityEngine;
 
-namespace BeatThat.Properties{
-	/// <summary>
-	/// Provides a screen rect for a RectTransform
-	/// </summary>
-	public class ScreenRect : HasRect
+namespace BeatThat.Properties
+{
+    /// <summary>
+    /// Provides a screen rect for a RectTransform
+    /// </summary>
+    public class ScreenRect : HasRect
 	{
 		public bool m_debug;
 
